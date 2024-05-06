@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './seabackground.module.css';
 import uniCardSvg from './assets/svg/uniCardSvg.svg';
 import { PiStarFourFill } from 'react-icons/pi';
 const App: React.FC = () => {
