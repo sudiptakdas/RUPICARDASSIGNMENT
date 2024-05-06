@@ -21,9 +21,9 @@ const App: React.FC = () => {
       <div className=' flex flex-col gap-9 relative'>
         <img
           src='https://www.uni.cards/images/nx-wave/nx_wave_hero.png'
-          className=' absolute top-28 right-0 h-auto w-[225] md:w-[420px] md:h-[420px] max-w-[420px] mx-6'
+          className=' absolute top-28 right-0 h-auto hidden lg:block w-[225] md:w-[420px] md:h-[420px] max-w-[420px] mx-6'
         />
-        <div className=' w-full flex flex-col md:flex-row justify-between items-center px-9 -mt-4'>
+        <div className=' w-full flex mb-10 md:mb-0  sm:justify-between items-center px-9 -mt-4'>
           <img src={uniCardSvg} alt='Uni Card' className=' w-32 h-32 mb-2' />
           <button className=' text-lg text-white bg-gray-900 bg-opacity-60 rounded-lg px-6 py-2 font-medium hover:bg-opacity-100'>
             Uni Paychek
@@ -44,17 +44,19 @@ const App: React.FC = () => {
           <PiStarFourFill className=' w-3 h-3' />
           <h1 className=' font-medium'>Zero Forex Markup</h1>
         </div>
-        <div className=' px-5 w-full relative'>
-          <input
-            placeholder=' Enter Phone Number'
-            className=' bg-black text-white p-4 rounded-lg w-3/12'
-          />
-          <button className=' absolute text-sm text-black left-[230px] top-[5px] bg-[#FDEF78] rounded-xl px-3 py-3 font-medium'>
-            Apply Now
-          </button>
+        <div className=' px-5 w-full relative border-0'>
+          <div className=' flex items-center bg-black max-w-fit focus:border-none'>
+            <input
+              placeholder=' Enter Phone Number'
+              className=' bg-black text-white p-4 border-none focus:border-none flex-1 focus:ring-0'
+            />
+            <button className=' text-xs text-black bg-[#FDEF78] rounded-xl px-3 py-4 font-medium min-w-fit mr-1.5'>
+              Apply Now
+            </button>
+          </div>
           <div className=' flex items-center gap-1.5 mt-4'>
             <input type='checkbox' />
-            <h1 className=' text-[10px] w-3/12'>
+            <h1 className=' text-[10px] w-full md:w-3/12'>
               You are agree to be contact by Uni Cards over Call, SMS, Email, or
               WhatsApp, to guideyou throughyour application
             </h1>
