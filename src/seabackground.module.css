@@ -1,0 +1,14 @@
+@keyframes moveWave {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0;
+  }
+}
+.seaBackground {
+  height: 100vh;
+  background-image: url('./assets/seaTopBackground.jpg');
+  background-size: cover;
+  animation: moveWave 40s linear infinite;
+}
